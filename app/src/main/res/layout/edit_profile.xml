@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="50dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="ข้อมูลผู้ใช้"
+                android:textSize="18dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/divider" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ชื่อ"
+                android:textColor="@color/yellow"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ชื่อ"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="นามสกุล"
+                android:textSize="18sp"
+                android:textColor="@color/yellow" />
+
+            <EditText
+                android:id="@+id/edit_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="นามสกุล"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="ที่อยู่"
+                android:textSize="18sp"
+                android:textColor="@color/yellow"/>
+
+            <EditText
+                android:id="@+id/edit_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ที่อยู่"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="เบอร์โทรศัพท์"
+                android:textSize="18sp"
+                android:textColor="@color/yellow"/>
+
+            <EditText
+                android:id="@+id/edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0812345678"
+                android:inputType="phone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="80dp"
+                    android:text="หมู่เลือด"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textColor="@color/yellow"/>
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/not_allergic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ไม่แพ้ยา"
+                        android:textSize="18sp"
+                        android:textColor="@color/yellow"/>
+
+                    <RadioButton
+                        android:id="@+id/allergic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="แพ้ยา"
+                        android:textSize="18sp"
+                        android:textColor="@color/yellow"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/allergic_show"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="กดเพื่อเพิ่มยาที่แพ้"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:focusableInTouchMode="true"
+                android:focusable="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/not_treatment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ไม่เคยรับการรักษา"
+                        android:textSize="16sp"
+                        android:textColor="@color/yellow"/>
+
+                    <RadioButton
+                        android:id="@+id/treatment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เคยรับการรักษา"
+                        android:textSize="16sp"
+                        android:textColor="@color/yellow"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/treatment_show"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="กดเพื่อเพิ่มสถานที่ที่เคยรับการรักษา"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:focusableInTouchMode="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="ข้อมูลผู้ติดต่อฉุกเฉิน"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/divider" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ชื่อ"
+                android:textColor="@color/yellow"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/edit_emergency_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ชื่อ"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="นามสกุล"
+                android:textColor="@color/yellow"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/edit_emergency_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="นามสกุล"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="เบอร์โทรศัพท์"
+                android:textSize="18sp"
+                android:textColor="@color/yellow"/>
+
+            <EditText
+                android:id="@+id/edit_emergency_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0812345678"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/button_save"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_button_yellow"
+                android:text="บันทึกข้อมูล"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

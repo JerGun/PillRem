@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:text="ฉุกเฉิน"
+
+        android:textColor="@color/red"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="ข้อมูลผู้ติดต่อฉุกเฉิน"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/divider" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon_emergency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_name_64px"
+            android:tint="@color/grey2"/>
+
+        <EditText
+            android:id="@+id/input_emergency_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="ชื่อ"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/icon_emergency"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon_emergency_last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_name_64px"
+            android:tint="@color/grey2"/>
+
+        <EditText
+            android:id="@+id/input_emergency_surname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="นามสกุล"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/icon_emergency_last_name"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon_emergency_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_phone_64px"
+            android:tint="@color/grey2"/>
+
+        <EditText
+            android:id="@+id/input_emergency_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="เบอร์โทรศัพท์"
+            android:inputType="phone"
+            android:paddingLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/icon_emergency_phone"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_emergency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_button_red"
+        android:text="ฉุกเฉิน"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+</LinearLayout>

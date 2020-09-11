@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/ic_main" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icon_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_user_64px"
+                    app:tint="@color/grey2" />
+
+                <EditText
+                    android:id="@+id/input_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="ชื่อผู้ใช้"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/icon_username"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icon_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_password_64px"
+                    app:tint="@color/grey2" />
+
+
+                <EditText
+                    android:id="@+id/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="รหัสผ่าน"
+                    android:inputType="textPassword"
+                    android:layout_marginStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_toEndOf="@+id/icon_password"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icon_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/ic_name_64px"
+                    app:tint="@color/grey2" />
+
+                <EditText
+                    android:id="@+id/input_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="ชื่อ"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/icon_name"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icon_last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/ic_name_64px"
+                    app:tint="@color/grey2" />
+
+                <EditText
+                    android:id="@+id/input_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="นามสกุล"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/icon_last_name"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/icon_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_address_64px"
+                        app:tint="@color/grey2" />
+
+                <EditText
+                    android:id="@+id/input_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="ที่อยู่"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/icon_address"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icon_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/ic_phone_64px"
+                    app:tint="@color/grey2" />
+
+                <EditText
+                    android:id="@+id/input_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="เบอร์โทรศัพท์"
+                    android:inputType="phone"
+                    android:paddingLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/icon_phone"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icon_blood"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_blood_64px"
+                    app:tint="@color/grey2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/icon_blood"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="60dp"
+                        android:text="หมู่เลือด"
+                        android:textSize="18sp"
+                        android:gravity="center"/>
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icon_allergic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_pill_64px"
+                    app:tint="@color/grey2" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/icon_allergic">
+
+                    <RadioButton
+                        android:id="@+id/not_allergic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ไม่แพ้ยา"
+                        android:textSize="16sp"
+                        android:textColor="@color/grey2"/>
+
+                    <RadioButton
+                        android:id="@+id/allergic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="แพ้ยา"
+                        android:textColor="@color/grey2"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/allergic_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="กดเพื่อเพิ่มยาที่แพ้"
+                android:textSize="16sp"
+                android:padding="20dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:focusableInTouchMode="true"
+                android:focusable="true"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icon_treatment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_treatment_64px"
+                    app:tint="@color/grey2" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/icon_treatment">
+
+                    <RadioButton
+                        android:id="@+id/not_treatment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ไม่เคยรับการรักษา"
+                        android:textSize="16dp"
+                        android:textColor="@color/grey2"/>
+
+                    <RadioButton
+                        android:id="@+id/treatment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เคยรับการรักษา"
+                        android:textSize="16dp"
+                        android:textColor="@color/grey2"/>
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/treatment_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="กดเพื่อเพิ่มสถานที่ที่เคยรับการรักษา"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="20dp"
+                android:visibility="gone"
+                android:focusableInTouchMode="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="ข้อมูลผู้ติดต่อฉุกเฉิน"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/divider" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icon_emergency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_name_64px"
+                    app:tint="@color/grey2" />
+
+                <EditText
+                    android:id="@+id/input_emergency_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="ชื่อ ผู้ติดต่อฉุกเฉิน"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/icon_emergency"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icon_emergency_last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_name_64px"
+                    app:tint="@color/grey2" />
+
+                <EditText
+                    android:id="@+id/input_emergency_surname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="นามสกุล ผู้ติดต่อฉุกเฉิน"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/icon_emergency_last_name"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icon_emergency_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_phone_64px"
+                    app:tint="@color/grey2" />
+
+                <EditText
+                    android:id="@+id/input_emergency_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="เบอร์โทรศัพท์ ผู้ติดต่อฉุกเฉิน"
+                    android:inputType="phone"
+                    android:paddingLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/icon_emergency_phone"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="มีบัญชีอยู่แล้ว?"
+                    android:textColor="@color/grey2"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="backToMain"
+                    android:paddingLeft="10dp"
+                    android:text="ลงชื่อเข้าใช้"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_register"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/rounded_button_yellow"
+                android:text="ลงทะเบียน"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+

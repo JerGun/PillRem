@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="days_abbreviated">
+        <item>จ</item>
+        <item>อ</item>
+        <item>พ</item>
+        <item>พฤ</item>
+        <item>ศ</item>
+        <item>ส</item>
+        <item>อา</item>
+    </string-array>
+
+</resources>

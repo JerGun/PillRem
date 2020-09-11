@@ -1,0 +1,43 @@
+<resources>
+
+    <string name="app_name" translatable="false">PillRem</string>
+    
+    <string-array name="blood">
+        <item>O</item>
+        <item>A</item>
+        <item>B</item>
+        <item>AB</item>
+    </string-array>
+
+    <!-- Edit Alarm Activity/Fragment -->
+    <string name="time">Time</string>
+    <string name="label">Label</string>
+    <string name="days">Days</string>
+    <string name="edit_alarm">แก้ไขแจ้งเตือน</string>
+    <string name="add_alarm">เพิ่มแจ้งเตือน</string>
+    <string name="update_complete">บันทึกเสร็จสมบูรณ์</string>
+    <string name="update_failed">บันทึกผิดพลาด</string>
+    <string name="delete_complete">ลบเสร็จสมบูรณ์</string>
+    <string name="delete_failed">ลบผิดพลาด</string>
+    <string name="delete_dialog_title">ยืนยันเพื่อลบแจ้งเตือน</string>
+    <string name="delete_dialog_content">ต้องการลบแจ้งเตือนใช่หรือไม่?</string>
+    <string name="yes">ใช่</string>
+    <string name="no">ไม่</string>
+
+    <!-- Edit Alarm Menu -->
+    <string name="action_save">บันทึก</string>
+    <string name="action_delete">ลบ</string>
+
+    <!-- Days -->
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+
+    <!-- Notification -->
+    <string name="channel_name">Simple Alarms</string>
+
+</resources>

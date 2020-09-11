@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_main"
+        android:roundIcon="@mipmap/ic_main"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".IndexActivity" />
+        <activity android:name=".AdminActivity"/>
+        <activity android:name=".ProfileActivity"/>
+        <activity android:name=".EditProfileActivity"/>
+        <activity android:name=".AppointmentActivity"/>
+        <activity android:name=".AppointmentAddActivity"/>
+        <activity android:name=".AppointmentEditActivity"/>
+        <activity android:name=".AlarmActivity"/>
+        <activity android:name=".AlarmEditActivity"/>
+        <activity android:name=".AlarmAddActivity"/>
+        <activity android:name=".RegisterActivity"/>
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts"/>
+
+        <receiver android:name=".AlarmReceiverBefore"/>
+        <receiver android:name=".AlarmReceiverBefore30"/>
+        <receiver android:name=".AlarmReceiver"/>
+
+        <receiver android:name=".AlarmBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".AppointmentReceiver"/>
+        <receiver android:name=".AppointmentReceiverBefore"/>
+
+        <receiver android:name=".AppointmentBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
